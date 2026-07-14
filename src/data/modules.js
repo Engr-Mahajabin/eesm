@@ -31,9 +31,7 @@ export const modules = [
 
     controls: 120,
 
-    standards: 1,
-
-    frameworks: ["ISO/IEC 42001"],
+    frameworks: ["iso-iec-42001"],
 
     features: [
       "AI Governance",
@@ -67,11 +65,12 @@ export const modules = [
       {
         question: "What is ISO/IEC 42001?",
         answer:
-          "ISO/IEC 42001 is the international management system standard for Artificial Intelligence governance.",
+          "ISO/IEC 42001 is the international standard for Artificial Intelligence Management Systems (AIMS).",
       },
       {
         question: "Who should use this module?",
-        answer: "Organizations developing, deploying or managing AI systems.",
+        answer:
+          "Organizations developing, deploying or governing Artificial Intelligence systems.",
       },
     ],
   },
@@ -106,9 +105,7 @@ export const modules = [
 
     controls: 180,
 
-    standards: 3,
-
-    frameworks: ["COBIT", "TOGAF", "OWASP Top 10"],
+    frameworks: ["cobit", "owasp", "togaf"],
 
     features: [
       "Enterprise Architecture",
@@ -125,28 +122,28 @@ export const modules = [
     ],
 
     benefits: [
-      "Improve IT governance",
-      "Reduce architecture risks",
-      "Support digital transformation",
-      "Strengthen secure design",
+      "Improve enterprise architecture maturity",
+      "Strengthen IT governance",
+      "Reduce technology risks",
+      "Support secure digital transformation",
     ],
 
     reports: [
-      "Architecture Report",
-      "Risk Analysis",
+      "Architecture Assessment Report",
+      "Maturity Assessment",
       "Gap Analysis",
       "Executive Summary",
     ],
 
     faqs: [
       {
-        question: "Which frameworks are supported?",
-        answer: "COBIT, TOGAF and OWASP Top 10 are supported.",
+        question: "Which frameworks are included?",
+        answer: "This module supports COBIT, OWASP and TOGAF assessments.",
       },
       {
-        question: "Does it measure architecture maturity?",
+        question: "Who should use this module?",
         answer:
-          "Yes. The assessment provides maturity scoring and recommendations.",
+          "Enterprise architects, IT leaders, security architects and governance teams.",
       },
     ],
   },
@@ -168,10 +165,10 @@ export const modules = [
     category: "Digital Forensics",
 
     shortDescription:
-      "Assess digital forensic readiness, evidence handling and incident investigation capabilities.",
+      "Assess digital forensic readiness, evidence handling and incident investigation capabilities using internationally recognized forensic standards.",
 
     heroDescription:
-      "Strengthen your organization's forensic readiness through structured assessments aligned with international investigation standards.",
+      "Strengthen your organization's digital forensic readiness through structured assessments aligned with ISO/IEC forensic investigation standards.",
 
     banner: "/images/modules/forensics.webp",
 
@@ -181,47 +178,51 @@ export const modules = [
 
     controls: 140,
 
-    standards: 4,
-
-    frameworks: ["ISO 27037", "ISO 27041", "ISO 27042", "ISO 27043"],
+    frameworks: [
+      "iso-iec-27037",
+      "iso-iec-27041",
+      "iso-iec-27042",
+      "iso-iec-27043",
+    ],
 
     features: [
-      "Evidence Collection",
+      "Digital Evidence Collection",
       "Incident Investigation",
       "Chain of Custody",
-      "Forensic Readiness",
+      "Forensic Readiness Assessment",
     ],
 
     workflow: [
       "Define Investigation Scope",
       "Assess Evidence Handling",
-      "Review Investigation Process",
+      "Evaluate Investigation Process",
       "Generate Readiness Report",
     ],
 
     benefits: [
-      "Improve incident response",
+      "Improve forensic readiness",
       "Maintain evidence integrity",
       "Support legal investigations",
-      "Increase forensic readiness",
+      "Strengthen incident response capability",
     ],
 
     reports: [
-      "Investigation Report",
-      "Readiness Score",
-      "Evidence Checklist",
-      "Recommendations",
+      "Forensic Readiness Report",
+      "Evidence Handling Assessment",
+      "Gap Analysis",
+      "Executive Summary",
     ],
 
     faqs: [
       {
-        question: "Is this module for incident response teams?",
+        question: "Which standards are covered?",
         answer:
-          "Yes. It evaluates forensic readiness and investigation capability.",
+          "The module covers ISO/IEC 27037, ISO/IEC 27041, ISO/IEC 27042 and ISO/IEC 27043.",
       },
       {
-        question: "Does it support ISO standards?",
-        answer: "Yes. It follows ISO 27037, 27041, 27042 and 27043.",
+        question: "Who should use this module?",
+        answer:
+          "Incident response teams, digital forensic investigators, SOC teams and cybersecurity professionals.",
       },
     ],
   },
@@ -243,10 +244,10 @@ export const modules = [
     category: "Cybersecurity Governance",
 
     shortDescription:
-      "Assess governance, cybersecurity risks and regulatory compliance using international security frameworks.",
+      "Assess governance, cybersecurity risks and regulatory compliance using globally recognized standards, frameworks and regulations.",
 
     heroDescription:
-      "Evaluate organizational governance, risk posture and compliance maturity through a unified enterprise assessment platform.",
+      "Evaluate your organization's governance maturity, cybersecurity posture and regulatory compliance through a unified GRC assessment platform.",
 
     banner: "/images/modules/grc.webp",
 
@@ -256,57 +257,85 @@ export const modules = [
 
     controls: 350,
 
-    standards: 8,
-
     frameworks: [
-      "ISO 27001",
-      "NIST CSF",
-      "PCI DSS v4.0",
-      "GDPR",
-      "CSA CCM",
-      "CIS Controls",
-      "CMMC",
-      "Bangladesh Bank ICT Guidelines",
+      "australia-privacy-act-2014",
+
+      "bangladesh-bank-cyber-security-framework",
+      "bangladesh-bank-ict-guidelines-4-0",
+
+      "cis-controls",
+
+      "cmmc-level-2-0",
+
+      "csa-v4-0-3",
+      "ccm-v4-0-12",
+
+      "gdpr",
+
+      "hipaa",
+
+      "iso-iec-27001",
+      "iso-iec-27002",
+      "iso-iec-27005",
+
+      "nist-sp-800-53",
+      "nist-sp-800-171",
+      "nist-cybersecurity-framework",
+      "nist-sp-800-61-rev-3",
+
+      "pci-dss-3-2-1",
+      "pci-dss-4-0",
     ],
 
     features: [
+      "Governance Assessment",
       "Risk Assessment",
-      "Gap Analysis",
       "Compliance Monitoring",
       "Audit Readiness",
+      "Gap Analysis",
+      "Executive Dashboard",
     ],
 
     workflow: [
-      "Choose Framework",
-      "Complete Assessment",
-      "Review Risk Score",
-      "Generate Compliance Report",
+      "Choose Assessment Framework",
+      "Complete Control Assessment",
+      "Review Risk & Compliance Score",
+      "Generate Executive Reports",
     ],
 
     benefits: [
-      "Reduce compliance gaps",
-      "Improve security posture",
+      "Centralize governance and compliance",
+      "Reduce regulatory risks",
+      "Improve cybersecurity maturity",
       "Prepare for external audits",
-      "Centralize governance",
+      "Identify security gaps",
+      "Support continuous compliance",
     ],
 
     reports: [
       "Compliance Report",
-      "Executive Dashboard",
-      "Risk Report",
+      "Risk Assessment Report",
       "Gap Analysis",
+      "Executive Dashboard",
+      "Audit Readiness Report",
+      "Management Summary",
     ],
 
     faqs: [
       {
-        question: "Which compliance standards are supported?",
+        question: "Which standards and frameworks are supported?",
         answer:
-          "ISO 27001, NIST CSF, PCI DSS, GDPR, CSA CCM, CIS Controls, CMMC and Bangladesh Bank ICT Guidelines.",
+          "This module supports ISO/IEC 27001, ISO/IEC 27002, ISO/IEC 27005, NIST SP 800-53, NIST SP 800-171, NIST CSF, PCI DSS, CIS Controls, CMMC Level 2.0, CSA, CCM, GDPR, HIPAA, Bangladesh Bank ICT Guidelines, Bangladesh Bank Cyber Security Framework and Australia Privacy Act.",
       },
       {
-        question: "Can this help with audit preparation?",
+        question: "Is this module suitable for audit preparation?",
         answer:
-          "Yes. The module identifies compliance gaps and generates audit-ready reports.",
+          "Yes. It helps organizations identify compliance gaps, assess risks and generate audit-ready reports.",
+      },
+      {
+        question: "Who should use this module?",
+        answer:
+          "Security teams, compliance officers, auditors, risk managers and organizations preparing for regulatory or certification audits.",
       },
     ],
   },
@@ -325,13 +354,13 @@ export const modules = [
 
     color: "from-emerald-500 to-green-500",
 
-    category: "Healthcare",
+    category: "Healthcare & Life Sciences",
 
     shortDescription:
-      "Assess pharmaceutical cybersecurity and regulatory compliance requirements across critical business operations.",
+      "Assess pharmaceutical cybersecurity, regulatory compliance and data integrity requirements aligned with FDA regulations.",
 
     heroDescription:
-      "Support pharmaceutical organizations with security assessments, regulatory compliance and governance aligned with FDA requirements.",
+      "Help pharmaceutical organizations strengthen cybersecurity, ensure regulatory compliance and improve quality management through structured FDA-based assessments.",
 
     banner: "/images/modules/pharmaceutical.webp",
 
@@ -341,48 +370,51 @@ export const modules = [
 
     controls: 170,
 
-    standards: 3,
-
-    frameworks: ["FDA", "21 CFR Part 11", "GAMP 5"],
+    frameworks: ["fda"],
 
     features: [
-      "FDA Compliance",
-      "Electronic Records Assessment",
-      "Security Controls",
+      "FDA Compliance Assessment",
+      "Data Integrity Assessment",
+      "Security Controls Evaluation",
       "Audit Documentation",
     ],
 
     workflow: [
-      "Select Standard",
-      "Evaluate Controls",
-      "Identify Gaps",
-      "Generate Compliance Report",
+      "Select Assessment",
+      "Evaluate Security Controls",
+      "Identify Compliance Gaps",
+      "Generate Assessment Report",
     ],
 
     benefits: [
-      "Support FDA compliance",
+      "Support FDA regulatory compliance",
+      "Improve data integrity",
       "Reduce regulatory risks",
-      "Strengthen data integrity",
-      "Improve audit preparedness",
+      "Prepare for regulatory inspections",
     ],
 
     reports: [
       "FDA Compliance Report",
       "Gap Analysis",
       "Risk Assessment",
-      "Audit Summary",
+      "Executive Summary",
     ],
 
     faqs: [
       {
         question: "Who should use this module?",
         answer:
-          "Pharmaceutical companies, healthcare organizations and regulated manufacturers.",
+          "Pharmaceutical manufacturers, healthcare organizations, biotechnology companies and regulated laboratories.",
       },
       {
-        question: "Does it support FDA requirements?",
+        question: "Which regulatory standard is covered?",
         answer:
-          "Yes. The assessment is aligned with FDA regulations including 21 CFR Part 11.",
+          "This module focuses on FDA regulatory compliance requirements for pharmaceutical organizations.",
+      },
+      {
+        question: "Can this help with regulatory inspections?",
+        answer:
+          "Yes. It identifies compliance gaps, evaluates security controls and prepares organizations for regulatory assessments.",
       },
     ],
   },

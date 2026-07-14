@@ -7,8 +7,19 @@ import {
     Shield,
     BarChart3,
 } from "lucide-react";
+import { frameworks } from "@/data/frameworks";
 
 export default function Overview({ module }) {
+
+    const standardsCount = frameworks.reduce((total, framework) => {
+        const count =
+            framework.standards?.filter((standard) =>
+                standard.modules?.includes(module.slug)
+            ).length || 0;
+
+        return total + count;
+    }, 0);
+
     return (
         <section className="py-24">
             <div className="mx-auto max-w-7xl px-6">
@@ -35,22 +46,18 @@ export default function Overview({ module }) {
                         </p>
 
                         <div className="mt-10 space-y-4">
-
                             {module.benefits.map((benefit) => (
                                 <div
                                     key={benefit}
                                     className="flex items-center gap-3"
                                 >
                                     <CheckCircle2 className="h-5 w-5 text-blue-600" />
-
                                     <span className="text-slate-700 dark:text-slate-300">
                                         {benefit}
                                     </span>
                                 </div>
                             ))}
-
                         </div>
-
                     </motion.div>
 
                     {/* Right */}
@@ -84,7 +91,7 @@ export default function Overview({ module }) {
                                     Standards
                                 </p>
                                 <h4 className="mt-2 text-2xl font-bold">
-                                    {module.standards}
+                                    {standardsCount}
                                 </h4>
                             </div>
 
@@ -104,9 +111,7 @@ export default function Overview({ module }) {
                                         className="flex items-center gap-3 rounded-xl border border-slate-200 p-4 dark:border-slate-800"
                                     >
                                         <FileText className="h-5 w-5 text-blue-600" />
-
                                         <span>{report}</span>
-
                                     </div>
                                 ))}
 
