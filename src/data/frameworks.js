@@ -81,6 +81,62 @@ export const frameworks = [
         modules: ["forensic-analysis"],
       },
     ],
+
+    coverage: [
+      "Governance",
+      "Risk Management",
+      "Asset Management",
+      "Access Control",
+      "Incident Response",
+    ],
+
+    bestFor: ["Financial Services", "Healthcare", "Government", "Technology"],
+
+    industries: [
+      "Banking",
+      "Healthcare",
+      "Telecommunications",
+      "Manufacturing",
+    ],
+
+    implementation: {
+      difficulty: "Medium",
+      duration: "3-6 Months",
+      certification: "Available",
+    },
+
+    relatedFrameworks: ["nist", "cobit", "pci-dss"],
+
+    assessmentProcess: [
+      "Select Framework",
+      "Answer Assessment",
+      "Calculate Risk Score",
+      "Generate Report",
+      "Continuous Improvement",
+    ],
+
+    faqs: [
+      {
+        question: "What is ISO?",
+        answer:
+          "ISO develops internationally recognized standards that help organizations improve quality, security, governance and operational excellence.",
+      },
+      {
+        question: "Who should implement ISO standards?",
+        answer:
+          "Organizations of any size across public and private sectors can implement ISO standards to strengthen compliance and security.",
+      },
+      {
+        question: "Does ISO provide certification?",
+        answer:
+          "Yes. Many ISO management system standards, such as ISO/IEC 27001 and ISO/IEC 42001, support third-party certification.",
+      },
+      {
+        question: "How long does implementation take?",
+        answer:
+          "Implementation typically ranges from 3 to 6 months depending on the organization's size, maturity and scope.",
+      },
+    ],
   },
 
   {
