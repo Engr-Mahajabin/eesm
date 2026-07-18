@@ -76,7 +76,7 @@ export default function Navbar() {
                         {mounted && theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
                     </button>
 
-                    <Link href="/login" className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition hover:text-blue-600 dark:text-slate-300">
+                    <Link href="https://www.soft.aaeesm.com/" className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition hover:text-blue-600 dark:text-slate-300">
                         Login
                     </Link>
                     <Link href="/request-demo" className="rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700">
@@ -126,7 +126,7 @@ export default function Navbar() {
 
                     {/* Action Buttons */}
                     <div className="pt-4 space-y-2 border-t border-slate-200 dark:border-slate-800">
-                        <Link href="/login" onClick={() => setMobileOpen(false)} className="block w-full rounded-xl border py-2.5 text-center font-medium text-slate-700 dark:text-slate-300">
+                        <Link href="https://www.soft.aaeesm.com/" onClick={() => setMobileOpen(false)} className="block w-full rounded-xl border py-2.5 text-center font-medium text-slate-700 dark:text-slate-300">
                             Login
                         </Link>
                         <Link href="/request-demo" onClick={() => setMobileOpen(false)} className="block w-full rounded-xl bg-blue-600 py-2.5 text-center font-semibold text-white">

@@ -5,7 +5,9 @@ import WhyEESM from "@/components/about/WhyEESM";
 import CoreCapabilities from "@/components/about/CoreCapabilities";
 import SupportedStandards from "@/components/about/SupportedStandards";
 import WhyChooseEESM from "@/components/about/WhyChooseEESM";
-import CTA from "@/components/home/CTA";
+import DevelopedBy from "@/components/about/DevelopedBy";
+import AboutCTA from "@/components/about/AboutCTA";
+// import CTA from "@/components/home/CTA";
 
 export default function AboutPage() {
   return (
@@ -17,7 +19,9 @@ export default function AboutPage() {
       <CoreCapabilities />
       <SupportedStandards />
       <WhyChooseEESM />
-      <CTA />
+      <DevelopedBy />
+      <AboutCTA />
+      {/* <CTA /> */}
     </>
   );
 }
