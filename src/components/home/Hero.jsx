@@ -1,161 +1,85 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, ShieldCheck } from "lucide-react";
+import { ArrowRight, ChevronRight, ShieldCheck } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden pt-32 pb-24">
-            {/* Background Glow */}
-            <div className="absolute inset-0 -z-10">
-                <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-[120px]" />
-            </div>
+        <section className="relative overflow-hidden pt-28 pb-20 text-center">
+            <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 px-6">
 
-            <div className="mx-auto flex max-w-7xl flex-col items-center gap-16 px-6 lg:flex-row">
-
-                {/* Left Content */}
-
+                {/* Top Text Section */}
                 <motion.div
-                    initial={{ opacity: 0, x: -40 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: .6 }}
-                    className="flex-1"
+                    initial={{ opacity: 0, y: 25 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="flex flex-col items-center"
                 >
-
-                    <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm text-blue-700 dark:border-blue-800 dark:bg-blue-950/40 dark:text-blue-300">
-
-                        <ShieldCheck className="h-4 w-4" />
-
-                        <span>Enterprise Cybersecurity & GRC Platform</span>
-
+                    {/* Badge */}
+                    <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-sky-100/80 dark:border-white/20 dark:bg-white/10 px-4 py-1.5 text-sm font-medium text-sky-800 dark:text-[#7dd3fc] backdrop-blur-md shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_4px_20px_rgba(0,0,0,0.2)]">
+                        <ShieldCheck className="h-4 w-4 text-sky-600 dark:text-[#38bdf8] dark:drop-shadow-[0_0_8px_rgba(56,189,248,0.8)]" />
+                        <span className="dark:drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]">
+                            Healthcare workforce analytics platform
+                        </span>
                     </div>
 
-                    <h1 className="text-4xl font-extrabold leading-tight text-slate-900 dark:text-white md:text-6xl">
-
+                    {/* Main Headline */}
+                    <h1 className="max-w-4xl text-5xl font-extrabold leading-tight tracking-tight text-slate-900 dark:text-white md:text-7xl dark:drop-shadow-[0_4px_12px_rgba(0,0,0,0.4)]">
                         Simplify Cybersecurity
                         <br />
-
-                        <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600 bg-clip-text text-transparent">
-                            Governance &
-                            Compliance
+                        <span className="bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-700 dark:bg-gradient-to-b dark:from-[#e0f2fe] dark:via-[#38bdf8] dark:to-[#0284c7] bg-clip-text text-transparent dark:drop-shadow-[0_0_20px_rgba(56,189,248,0.4)]">
+                            Governance & Compliance
                         </span>
-
                     </h1>
 
-                    <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400">
-
+                    {/* Subtitle */}
+                    <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-[#e0f2fe]/90 font-normal dark:font-normal dark:drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
                         eGovernance Enterprise Security Manager (eESM) helps organizations
                         assess compliance, identify security gaps, manage cyber risks and
                         strengthen governance using internationally recognized frameworks.
-
                     </p>
 
-                    <div className="mt-10 flex flex-wrap gap-4">
-
+                    {/* Action Buttons */}
+                    <div className="mt-10 flex flex-wrap gap-4 justify-center">
+                        {/* Primary Button */}
                         <Link
                             href="/request-demo"
-                            className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-7 py-3 font-semibold text-white transition hover:bg-blue-700"
+                            className="inline-flex items-center gap-2 rounded-xl bg-sky-600 hover:bg-sky-700 dark:bg-gradient-to-b dark:from-[#38bdf8] dark:to-[#0066ee] px-8 py-3.5 font-semibold text-white transition hover:brightness-110 shadow-md dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.5),0_10px_25px_rgba(0,102,238,0.4)]"
                         >
-                            Request Demo
-                            <ArrowRight className="h-4 w-4" />
+                            Request a demo
+                            <ArrowRight className="h-5 w-5" />
                         </Link>
 
+                        {/* Glass Secondary Button */}
                         <Link
                             href="/modules"
-                            className="rounded-xl border border-slate-300 px-7 py-3 font-semibold text-slate-700 transition hover:border-blue-600 hover:text-blue-600 dark:border-slate-700 dark:text-slate-300"
+                            className="inline-flex items-center gap-1.5 rounded-xl border border-sky-300/80 bg-sky-100/50 hover:bg-sky-100 text-sky-800 dark:border-white/25 dark:bg-white/10 dark:hover:bg-white/20 dark:text-[#7dd3fc] px-8 py-3.5 font-semibold backdrop-blur-md transition dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)]"
                         >
-                            Explore Platform
+                            Explore the platform
+                            <ChevronRight className="h-4 w-4 opacity-80" />
                         </Link>
-
                     </div>
-
-                    <div className="mt-10 flex flex-wrap gap-6 text-sm text-slate-500 dark:text-slate-400">
-
-                        <span>✔ ISO Ready</span>
-
-                        <span>✔ NIST</span>
-
-                        <span>✔ PCI DSS</span>
-
-                        <span>✔ GDPR</span>
-
-                    </div>
-
                 </motion.div>
 
-                {/* Right */}
-
+                {/* Dashboard Frame Container */}
                 <motion.div
-                    initial={{ opacity: 0, x: 40 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: .6, delay: .2 }}
-                    className="flex-1"
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    className="relative mt-6 w-full max-w-5xl"
                 >
-
-                    <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl dark:border-slate-800 dark:bg-slate-900">
-
-                        <div className="mb-8 flex items-center justify-between">
-
-                            <h3 className="font-semibold text-slate-900 dark:text-white">
-                                Assessment Dashboard
-                            </h3>
-
-                            <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700 dark:bg-green-900/30 dark:text-green-400">
-                                Live
-                            </span>
-
-                        </div>
-
-                        <div className="space-y-6">
-
-                            <div>
-                                <div className="mb-2 flex justify-between text-sm">
-                                    <span>Assessment Progress</span>
-                                    <span>75%</span>
-                                </div>
-
-                                <div className="h-2 rounded-full bg-slate-200 dark:bg-slate-800">
-                                    <div className="h-2 w-3/4 rounded-full bg-blue-600"></div>
-                                </div>
-                            </div>
-
-                            <div className="grid grid-cols-2 gap-4">
-
-                                <div className="rounded-xl bg-slate-50 p-4 dark:bg-slate-800">
-                                    <p className="text-xs text-slate-500">
-                                        Compliance Score
-                                    </p>
-
-                                    <h4 className="mt-2 text-2xl font-bold text-blue-600">
-                                        92%
-                                    </h4>
-                                </div>
-
-                                <div className="rounded-xl bg-slate-50 p-4 dark:bg-slate-800">
-                                    <p className="text-xs text-slate-500">
-                                        Risk Level
-                                    </p>
-
-                                    <h4 className="mt-2 text-2xl font-bold text-amber-500">
-                                        Medium
-                                    </h4>
-                                </div>
-
-                            </div>
-
-                            <div className="rounded-xl border border-dashed border-slate-300 p-4 text-sm text-slate-500 dark:border-slate-700">
-                                ✔ ISO 27001
-                                <br />
-                                ✔ NIST SP 800-53
-                                <br />
-                                ✔ PCI DSS
-                            </div>
-
-                        </div>
-
+                    <div className="rounded-2xl border border-sky-200/80 bg-white/70 shadow-xl dark:border-white/20 dark:bg-white/5 p-2 backdrop-blur-lg dark:shadow-[inset_0_1px_2px_rgba(255,255,255,0.3),0_20px_50px_rgba(0,0,0,0.3)]">
+                        <Image
+                            src="/images/hero/hero_dashboard.png"
+                            alt="Assessment Dashboard"
+                            width={1200}
+                            height={675}
+                            priority
+                            className="h-auto w-full rounded-xl object-cover border border-sky-100 dark:border-white/10"
+                        />
                     </div>
-
                 </motion.div>
 
             </div>

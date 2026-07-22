@@ -11,7 +11,7 @@ import Industries from "@/components/home/Industries";
 
 export default function Home() {
   return (
-    <main className="bg-zinc-50 dark:bg-slate-950">
+    <main className="bg-zinc-100 dark:bg-[#032560] text-slate-900 dark:text-white min-h-screen">
       <Hero />
       <PlatformStatistics />
       <TrustedFrameworks />
