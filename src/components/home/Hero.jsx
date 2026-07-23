@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden pt-28 pb-20 text-center">
+        <section className="relative overflow-hidden pt-16 pb-20 text-center">
             <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 px-6">
 
                 {/* Top Text Section */}
@@ -72,7 +72,7 @@ export default function Hero() {
                 >
                     <div className="rounded-2xl border border-sky-200/80 bg-white/70 shadow-xl dark:border-white/20 dark:bg-white/5 p-2 backdrop-blur-lg dark:shadow-[inset_0_1px_2px_rgba(255,255,255,0.3),0_20px_50px_rgba(0,0,0,0.3)]">
                         <Image
-                            src="/images/hero/hero_dashboard.png"
+                            src="/images/home/hero_dashboard.png"
                             alt="Assessment Dashboard"
                             width={1200}
                             height={675}
