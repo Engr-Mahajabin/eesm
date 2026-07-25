@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-body {
-  background-color: #020617; /* Tailwind bg-slate-950 */
-  color: #ffffff;
-}
-
 @theme {
   --animate-*: initial; /* যদি আগে থেকে কিছু থাকে */
 }

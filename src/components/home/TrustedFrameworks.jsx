@@ -281,9 +281,6 @@ export default function TrustedFrameworks() {
                                     <span className="text-base font-bold tracking-tight text-slate-900 dark:text-white leading-none">
                                         {item.title}
                                     </span>
-                                    <span className="text-[11px] font-normal text-slate-500 dark:text-[#e0f2fe]/70 mt-0.5">
-                                        Compliance assessment & mapping
-                                    </span>
                                 </div>
                             </motion.div>
                         );
