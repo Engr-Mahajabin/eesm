@@ -135,19 +135,22 @@
 //     );
 // }
 
+
+
+
+
 "use client";
 
 import { motion } from "framer-motion";
 import {
-    Bot,
+    ClipboardCheck,
     Layers,
-    LineChart,
-    Sparkles,
-    ShieldCheck,
-    Users,
-    ArrowUpRight,
+    UserCheck,
+    FileSpreadsheet,
+    BarChart3,
+    Shield,
     Send,
-    Lock
+    Download
 } from "lucide-react";
 
 export default function WhyChoose() {
@@ -184,10 +187,10 @@ export default function WhyChoose() {
                     </p>
                 </motion.div>
 
-                {/* Image 1 Bento Grid Layout */}
+                {/* Bento Grid Layout */}
                 <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-                    {/* Bento Card 1: AI-Powered Assessment (Image 1 top-left style) */}
+                    {/* Bento Card 1: Assessment Management */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -196,13 +199,12 @@ export default function WhyChoose() {
                         whileHover={{ y: -5 }}
                         className="group relative flex flex-col justify-between overflow-hidden rounded-2xl p-6 border border-sky-200/80 bg-white/80 dark:border-[#38bdf8]/30 dark:bg-[#0369a1]/10 backdrop-blur-md shadow-md dark:shadow-[0_8px_32px_0_rgba(2,132,199,0.15)] dark:hover:border-[#38bdf8] transition-all"
                     >
-                        {/* UI Preview Box */}
                         <div className="rounded-xl border border-sky-200/60 bg-slate-900/90 dark:border-slate-800 p-4 mb-6 shadow-inner">
                             <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider block mb-2">
-                                Discover gaps with AI
+                                Execute Assessment
                             </span>
                             <div className="flex items-center justify-between rounded-lg bg-slate-800/80 px-3 py-2 border border-slate-700/50">
-                                <span className="text-xs text-slate-300">ISO 27001 Annex A.5 Assessment...</span>
+                                <span className="text-xs text-slate-300">ISO 27001 Security Audit...</span>
                                 <div className="h-6 w-6 rounded-md bg-sky-500/20 text-sky-400 flex items-center justify-center">
                                     <Send className="h-3 w-3" />
                                 </div>
@@ -211,18 +213,18 @@ export default function WhyChoose() {
 
                         <div>
                             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl border border-sky-200 bg-sky-100/80 dark:border-[#38bdf8]/40 dark:bg-[#0284c7]/30">
-                                <Bot className="h-5 w-5 text-sky-600 dark:text-[#38bdf8]" />
+                                <ClipboardCheck className="h-5 w-5 text-sky-600 dark:text-[#38bdf8]" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                                AI-Powered Assessment
+                                Assessment Management
                             </h3>
                             <p className="mt-2 text-xs leading-relaxed text-slate-600 dark:text-[#e0f2fe]/70">
-                                Automate task prioritization, risk identification, and deadline predictions with intelligent AI algorithms.
+                                Create, manage and execute compliance assessments with structured workflows.
                             </p>
                         </div>
                     </motion.div>
 
-                    {/* Bento Card 2: Framework Integrations (Image 1 top-middle style) */}
+                    {/* Bento Card 2: Multi-Framework Support */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -231,30 +233,30 @@ export default function WhyChoose() {
                         whileHover={{ y: -5 }}
                         className="group relative flex flex-col justify-between overflow-hidden rounded-2xl p-6 border border-sky-200/80 bg-white/80 dark:border-[#38bdf8]/30 dark:bg-[#0369a1]/10 backdrop-blur-md shadow-md dark:shadow-[0_8px_32px_0_rgba(2,132,199,0.15)] dark:hover:border-[#38bdf8] transition-all"
                     >
-                        {/* UI Preview Box: Central Node */}
                         <div className="relative flex items-center justify-center h-28 mb-6 rounded-xl border border-sky-200/60 bg-slate-900/90 dark:border-slate-800">
                             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-500/20 border border-sky-400/50 text-sky-300 shadow-[0_0_20px_rgba(56,189,248,0.4)]">
                                 <Layers className="h-6 w-6" />
                             </div>
                             <div className="absolute top-3 left-4 text-[10px] bg-slate-800 text-sky-300 px-2 py-0.5 rounded-full border border-slate-700">ISO</div>
+                            <div className="absolute top-3 right-4 text-[10px] bg-slate-800 text-sky-300 px-2 py-0.5 rounded-full border border-slate-700">GDPR</div>
+                            <div className="absolute bottom-3 left-4 text-[10px] bg-slate-800 text-sky-300 px-2 py-0.5 rounded-full border border-slate-700">HIPAA</div>
                             <div className="absolute bottom-3 right-4 text-[10px] bg-slate-800 text-sky-300 px-2 py-0.5 rounded-full border border-slate-700">NIST</div>
-                            <div className="absolute top-3 right-4 text-[10px] bg-slate-800 text-sky-300 px-2 py-0.5 rounded-full border border-slate-700">OWASP</div>
                         </div>
 
                         <div>
                             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl border border-sky-200 bg-sky-100/80 dark:border-[#38bdf8]/40 dark:bg-[#0284c7]/30">
-                                <ShieldCheck className="h-5 w-5 text-sky-600 dark:text-[#38bdf8]" />
+                                <Layers className="h-5 w-5 text-sky-600 dark:text-[#38bdf8]" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                                Built-in Standards
+                                Multi-Framework Support
                             </h3>
                             <p className="mt-2 text-xs leading-relaxed text-slate-600 dark:text-[#e0f2fe]/70">
-                                Offers seamless mapping with global governance and security standards you rely on daily.
+                                ISO, NIST, CIS, GDPR, HIPAA, PCI DSS and more out of the box.
                             </p>
                         </div>
                     </motion.div>
 
-                    {/* Bento Card 3: Executive Risk Analytics (Image 1 top-right style) */}
+                    {/* Bento Card 3: Role-Based Access Control */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -263,29 +265,31 @@ export default function WhyChoose() {
                         whileHover={{ y: -5 }}
                         className="group relative flex flex-col justify-between overflow-hidden rounded-2xl p-6 border border-sky-200/80 bg-white/80 dark:border-[#38bdf8]/30 dark:bg-[#0369a1]/10 backdrop-blur-md shadow-md dark:shadow-[0_8px_32px_0_rgba(2,132,199,0.15)] dark:hover:border-[#38bdf8] transition-all"
                     >
-                        {/* UI Preview Box: Mini Bar Chart */}
-                        <div className="flex items-end justify-between gap-2 h-28 mb-6 p-4 rounded-xl border border-sky-200/60 bg-slate-900/90 dark:border-slate-800">
-                            <div className="w-full bg-slate-800 rounded-t h-[40%]" />
-                            <div className="w-full bg-slate-800 rounded-t h-[65%]" />
-                            <div className="w-full bg-sky-500 rounded-t h-[90%] shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
-                            <div className="w-full bg-slate-800 rounded-t h-[50%]" />
-                            <div className="w-full bg-slate-800 rounded-t h-[75%]" />
+                        <div className="flex flex-col justify-center gap-2 h-28 mb-6 p-4 rounded-xl border border-sky-200/60 bg-slate-900/90 dark:border-slate-800">
+                            <div className="flex items-center justify-between bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700/50 text-xs text-slate-300">
+                                <span>Admin Role</span>
+                                <span className="text-[10px] text-emerald-400 font-semibold">Full Access</span>
+                            </div>
+                            <div className="flex items-center justify-between bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700/50 text-xs text-slate-300">
+                                <span>Auditor Role</span>
+                                <span className="text-[10px] text-sky-400 font-semibold">Read Only</span>
+                            </div>
                         </div>
 
                         <div>
                             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl border border-sky-200 bg-sky-100/80 dark:border-[#38bdf8]/40 dark:bg-[#0284c7]/30">
-                                <LineChart className="h-5 w-5 text-sky-600 dark:text-[#38bdf8]" />
+                                <UserCheck className="h-5 w-5 text-sky-600 dark:text-[#38bdf8]" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                                Executive Risk Analytics
+                                Role-Based Access Control
                             </h3>
                             <p className="mt-2 text-xs leading-relaxed text-slate-600 dark:text-[#e0f2fe]/70">
-                                Gain full visibility into real-time compliance posture, gap severity, and remediation progress.
+                                Secure user roles, customizable permissions, and access governance.
                             </p>
                         </div>
                     </motion.div>
 
-                    {/* Bento Card 4: Continuous Monitoring (Image 1 bottom-left style) */}
+                    {/* Bento Card 4: Audit Management */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -294,28 +298,31 @@ export default function WhyChoose() {
                         whileHover={{ y: -5 }}
                         className="group relative flex flex-col justify-between overflow-hidden rounded-2xl p-6 border border-sky-200/80 bg-white/80 dark:border-[#38bdf8]/30 dark:bg-[#0369a1]/10 backdrop-blur-md shadow-md dark:shadow-[0_8px_32px_0_rgba(2,132,199,0.15)] dark:hover:border-[#38bdf8] transition-all"
                     >
-                        {/* UI Preview Box: Line Wave */}
-                        <div className="flex items-center justify-center h-28 mb-6 p-4 rounded-xl border border-sky-200/60 bg-slate-900/90 dark:border-slate-800">
-                            <div className="w-full flex items-center justify-between text-xs text-sky-400 font-mono">
-                                <span>Active Shield</span>
-                                <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]">99.9%</span>
+                        <div className="flex flex-col justify-center gap-2 h-28 mb-6 p-4 rounded-xl border border-sky-200/60 bg-slate-900/90 dark:border-slate-800">
+                            <div className="flex items-center justify-between text-xs text-slate-300">
+                                <span>Annual Security Audit</span>
+                                <span className="px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-[10px]">In Progress</span>
+                            </div>
+                            <div className="flex items-center justify-between text-xs text-slate-300 mt-1">
+                                <span>SOC 2 Type II Verification</span>
+                                <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]">Approved</span>
                             </div>
                         </div>
 
                         <div>
                             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl border border-sky-200 bg-sky-100/80 dark:border-[#38bdf8]/40 dark:bg-[#0284c7]/30">
-                                <Lock className="h-5 w-5 text-sky-600 dark:text-[#38bdf8]" />
+                                <FileSpreadsheet className="h-5 w-5 text-sky-600 dark:text-[#38bdf8]" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                                Continuous Risk Tracking
+                                Audit Management
                             </h3>
                             <p className="mt-2 text-xs leading-relaxed text-slate-600 dark:text-[#e0f2fe]/70">
-                                Stay in control with real-time insights that help you measure security maturity that matters.
+                                Plan, approve and track audits efficiently with audit trail history.
                             </p>
                         </div>
                     </motion.div>
 
-                    {/* Bento Card 5: Real-time Collaboration (Image 1 bottom-middle style) */}
+                    {/* Bento Card 5: Reporting & Dashboards */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -324,32 +331,36 @@ export default function WhyChoose() {
                         whileHover={{ y: -5 }}
                         className="group relative flex flex-col justify-between overflow-hidden rounded-2xl p-6 border border-sky-200/80 bg-white/80 dark:border-[#38bdf8]/30 dark:bg-[#0369a1]/10 backdrop-blur-md shadow-md dark:shadow-[0_8px_32px_0_rgba(2,132,199,0.15)] dark:hover:border-[#38bdf8] transition-all"
                     >
-                        {/* UI Preview Box: Chat/Auditor Avatars */}
-                        <div className="flex flex-col justify-center gap-2 h-28 mb-6 p-4 rounded-xl border border-sky-200/60 bg-slate-900/90 dark:border-slate-800">
-                            <div className="flex items-center justify-between bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700/50 text-xs text-slate-300">
-                                <span>Lead Auditor</span>
-                                <span className="text-[10px] text-sky-400">Reviewed</span>
+                        <div className="flex flex-col justify-between h-28 mb-6 p-3.5 rounded-xl border border-sky-200/60 bg-slate-900/90 dark:border-slate-800">
+                            <div className="flex justify-between items-center text-xs text-slate-300">
+                                <span>Export Reports</span>
+                                <div className="flex gap-1">
+                                    <span className="px-1.5 py-0.5 bg-red-500/20 text-red-300 text-[9px] rounded font-mono">PDF</span>
+                                    <span className="px-1.5 py-0.5 bg-emerald-500/20 text-emerald-300 text-[9px] rounded font-mono">XLSX</span>
+                                </div>
                             </div>
-                            <div className="flex items-center justify-between bg-slate-800/80 px-3 py-1.5 rounded-lg border border-slate-700/50 text-xs text-slate-300">
-                                <span>CISO Officer</span>
-                                <span className="text-[10px] text-emerald-400">Approved</span>
+                            <div className="flex items-end justify-between gap-2 h-12">
+                                <div className="w-full bg-slate-800 rounded-t h-[50%]" />
+                                <div className="w-full bg-sky-500 rounded-t h-[90%]" />
+                                <div className="w-full bg-slate-800 rounded-t h-[70%]" />
+                                <div className="w-full bg-emerald-400 rounded-t h-[100%]" />
                             </div>
                         </div>
 
                         <div>
                             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl border border-sky-200 bg-sky-100/80 dark:border-[#38bdf8]/40 dark:bg-[#0284c7]/30">
-                                <Users className="h-5 w-5 text-sky-600 dark:text-[#38bdf8]" />
+                                <BarChart3 className="h-5 w-5 text-sky-600 dark:text-[#38bdf8]" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                                Multi-User Collaboration
+                                Reporting & Dashboards
                             </h3>
                             <p className="mt-2 text-xs leading-relaxed text-slate-600 dark:text-[#e0f2fe]/70">
-                                Allow compliance officers, CISOs, and auditors to share updates and evidence seamlessly.
+                                Interactive dashboards, real-time charts, PDF and Excel exports.
                             </p>
                         </div>
                     </motion.div>
 
-                    {/* Bento Card 6: Audit Readiness Results (Image 1 bottom-right style) */}
+                    {/* Bento Card 6: Governance & Compliance */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -358,33 +369,32 @@ export default function WhyChoose() {
                         whileHover={{ y: -5 }}
                         className="group relative flex flex-col justify-between overflow-hidden rounded-2xl p-6 border border-sky-200/80 bg-white/80 dark:border-[#38bdf8]/30 dark:bg-[#0369a1]/10 backdrop-blur-md shadow-md dark:shadow-[0_8px_32px_0_rgba(2,132,199,0.15)] dark:hover:border-[#38bdf8] transition-all"
                     >
-                        {/* UI Preview Box: Task Results List */}
                         <div className="flex flex-col justify-center gap-2 h-28 mb-6 p-4 rounded-xl border border-sky-200/60 bg-slate-900/90 dark:border-slate-800">
                             <div className="flex justify-between items-center text-xs text-slate-300">
-                                <span>Governance Controls</span>
+                                <span>Governance Score</span>
                                 <span className="text-emerald-400 font-bold">95% ↑</span>
                             </div>
                             <div className="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
                                 <div className="bg-emerald-400 h-full w-[95%]" />
                             </div>
                             <div className="flex justify-between items-center text-xs text-slate-300 mt-1">
-                                <span>Risk Remediation</span>
-                                <span className="text-sky-400 font-bold">88% ↑</span>
+                                <span>Compliance Index</span>
+                                <span className="text-sky-400 font-bold">90% ↑</span>
                             </div>
                             <div className="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                                <div className="bg-sky-400 h-full w-[88%]" />
+                                <div className="bg-sky-400 h-full w-[90%]" />
                             </div>
                         </div>
 
                         <div>
                             <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl border border-sky-200 bg-sky-100/80 dark:border-[#38bdf8]/40 dark:bg-[#0284c7]/30">
-                                <Sparkles className="h-5 w-5 text-sky-600 dark:text-[#38bdf8]" />
+                                <Shield className="h-5 w-5 text-sky-600 dark:text-[#38bdf8]" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                                Audit Readiness
+                                Governance & Compliance
                             </h3>
                             <p className="mt-2 text-xs leading-relaxed text-slate-600 dark:text-[#e0f2fe]/70">
-                                Generate instant reports and keep full visibility into how compliance tasks are managed.
+                                Centralized governance, risk mapping and compliance workflows.
                             </p>
                         </div>
                     </motion.div>

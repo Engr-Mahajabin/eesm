@@ -7,21 +7,21 @@ import SupportedStandards from "@/components/about/SupportedStandards";
 import WhyChooseEESM from "@/components/about/WhyChooseEESM";
 import DevelopedBy from "@/components/about/DevelopedBy";
 import AboutCTA from "@/components/about/AboutCTA";
-// import CTA from "@/components/home/CTA";
+import CTA from "@/components/home/CTA";
 
 export default function AboutPage() {
   return (
     <>
       <AboutHero />
       <CompanyOverview />
-      <MissionVision />
-      <WhyEESM />
-      <CoreCapabilities />
+      {/* <MissionVision /> */}
+      {/* <WhyEESM /> */}
+      {/* <CoreCapabilities /> */}
       <SupportedStandards />
-      <WhyChooseEESM />
-      <DevelopedBy />
-      <AboutCTA />
-      {/* <CTA /> */}
+      {/* <WhyChooseEESM /> */}
+      {/* <DevelopedBy /> */}
+      {/* <AboutCTA /> */}
+      <CTA />
     </>
   );
 }
